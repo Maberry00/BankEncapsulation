@@ -13,8 +13,8 @@ namespace BankEncapsulation
 
         public void Deposit(double amount) 
         {
-            Console.WriteLine($"A deposit of {amount,0:c} to your account");
-            _balance = amount;
+            Console.WriteLine($"A deposit of {amount, 0:c} to your account");
+            _balance += amount;
         }
 
         public double GetBalance() 
